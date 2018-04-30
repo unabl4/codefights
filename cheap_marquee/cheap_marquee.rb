@@ -1,3 +1,5 @@
+# https://codefights.com/challenge/3uL94YNXEhHvDFymZ
+
 # lit pixels on the grid (per column, left to right)
 # format: 4x5
 $pixels = {
