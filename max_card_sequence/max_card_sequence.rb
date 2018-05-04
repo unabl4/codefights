@@ -1,4 +1,4 @@
-# https://codefights.com/challenge/kjXSxYfm4ZfvdzAs4/solutions
+# https://codefights.com/challenge/kjXSxYfm4ZfvdzAs4
 
 def maxCardSequence(cards)
     cards.sort! # sort
