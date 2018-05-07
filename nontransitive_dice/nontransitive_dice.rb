@@ -21,7 +21,7 @@ def is_higher?(a,b)
 end
 
 def nontransitiveDice(dice)
-    # try all possible combinations of three dices -> 6 possibilities
+    # try all possible combinations of three dice -> 6 possibilities
     dice.permutation.any? do |a,b,c|
         is_higher?(a,b) && is_higher?(b,c) && !is_higher?(a,c)
     end
