@@ -36,7 +36,7 @@ end
 def shortestPathBetweenDoors(map)
     start,finish = find_pos(map) # load positions
     
-    distances = { xy_hash(start[0],start[1]) => 0 } # ':' cannot declaration be used here
+    distances = { xy_hash(start[0],start[1]) => 0 } # ':' declaration cannot be used here
     queue = [start]
     
     until queue.empty?
