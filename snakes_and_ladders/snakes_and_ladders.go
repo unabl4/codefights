@@ -3,12 +3,11 @@
 type playerState struct {
     Y int
     X int
-    Tile int
     Direction int   // direction sign: -1 (left), (+1) right
 }
 
 func (ps *playerState) moveSteps(steps int) {
-    newX := (*ps).X + ((*ps).Direction * steps)
+    newX := ps.X + (ps.Direction * steps)
     
     // bounce-back edge case
     if ps.Y == 0 && newX < 0 {  // overshoot condition
@@ -76,7 +75,7 @@ func snakesAndLadders(board [][]int, dieRolls []int, players int) []int {
     var playerStates = make([]*playerState, players)
     
     for i:=0; i < players; i++ {
-        playerStates[i] = &playerState { 9, 0, 1, 1 }    // bottom left corner
+        playerStates[i] = &playerState { 9, 0, 1 }    // bottom left corner
     }
         
     // step 2: run the game
